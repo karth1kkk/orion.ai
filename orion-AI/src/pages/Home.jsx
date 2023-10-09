@@ -19,8 +19,10 @@ const Home = () => {
             try{
             const response = await fetch('https://orion-ai-sigma.vercel.app/api/v1/post',{
                 method: 'GET',
+                mode: 'cors',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Origin': 'https://orion-ai-dev.vercel.app'
                 },
             })
 
