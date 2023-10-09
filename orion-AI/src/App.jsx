@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import { BrowserRouter, Link, Route, Routes,useLocation } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { logo1 } from './assets';
 import { Home, CreatePost } from './pages';
 import { useSearch } from './context/SearchContext';
