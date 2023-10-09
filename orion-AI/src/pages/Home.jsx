@@ -20,7 +20,8 @@ const Home = () => {
             const response = await fetch('https://vercel.com/karth1kkk/orion-ai/3SnrjsrtQG36m33AsZLw9zoXYFxi/api/v1/post',{
                 method: 'GET',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': 'https://orion-ai-dev.vercel.app', 
                 },
             })
 
