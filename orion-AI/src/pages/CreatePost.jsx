@@ -23,20 +23,7 @@ const CreatePost = () => {
   const handleSurpriseMe = () => {
     const randomPrompt = getRandomPrompt(form.prompt);
     setForm({ ...form, prompt: randomPrompt });
-  };
-
-    useEffect(() => {
-    // Retrieve the reload count from local storage
-    const reloadCount = parseInt(localStorage.getItem('reloadCount')) || 0;
-  
-    if (reloadCount === 1) {
-      // Navigate to the '/' page on the second reload
-      navigate('/');
-    } else {
-      // Increment the reload count and store it in local storage
-      localStorage.setItem('reloadCount', reloadCount + 1);
-    }
-  }, [navigate]);  
+  }; 
 
   const generateImage = async () => {
     if (form.prompt) {
@@ -44,10 +31,8 @@ const CreatePost = () => {
         setGeneratingImg(true);
         const response = await fetch('https://orion-ai-sigma.vercel.app/api/v1/orion', {
           method: 'POST',
-          mode: 'cors',
           headers: {
             'Content-Type': 'application/json',
-            'Origin': 'https://orion-ai-dev.vercel.app',
           },
           body: JSON.stringify({
             prompt: form.prompt,
@@ -74,10 +59,8 @@ const CreatePost = () => {
       try {
         const response = await fetch('https://orion-ai-sigma.vercel.app/api/v1/post', {
           method: 'POST',
-          mode: 'cors',
           headers: {
             'Content-Type': 'application/json',
-            'Origin': 'https://orion-ai-dev.vercel.app',
           },
           body: JSON.stringify({ ...form }),
         });
