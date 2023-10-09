@@ -1,0 +1,14 @@
+.my-bg-default {
+  background-image: url('./assets/background.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: black;
+
+}
+
+.my-bg-new {
+  background-image: url('./assets/background1.jpg');
+  background-size: 100% ;
+  background-repeat: repeat;
+  background-color: black;
+}
