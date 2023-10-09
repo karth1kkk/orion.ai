@@ -6,7 +6,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://orion-ai-dev.vercel.app/"
+          "value": "https://orion-ai-dev.vercel.app"
         }
       ]
     }
