@@ -42,11 +42,10 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('https://vercel.com/karth1kkk/orion-ai/3SnrjsrtQG36m33AsZLw9zoXYFxi/api/v1/orion', {
+        const response = await fetch('https://orion-ai-sigma.vercel.app/api/v1/orion', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'https://orion-ai-dev.vercel.app', 
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify({
             prompt: form.prompt,
