@@ -166,7 +166,7 @@ const CreatePost = () => {
             <div class="flex flex-col">
                 <div class="flex mt-24 mb-12 flex-row justify-between">
                 <div class="-pt-1">
-                        <img src={or} alt="" width="84" height="25" />   
+                        <img src={or} alt="or" width="84" height="25" />   
                     </div>
                     <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase" href='https://your-projects-com.vercel.app/'>YourProjects.com</a>
                     <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase" href='https://codelingual.vercel.app/'>CodeLingual</a>
