@@ -72,6 +72,7 @@ const CreatePost = () => {
         await response.json();
         alert('Success');
         navigate('/');
+        window.location.href = window.location.href;
       } catch (err) {
         alert(err);
       } finally {
