@@ -3,10 +3,7 @@
   "builds": [
     { "src": "./index.js", "use": "@vercel/node" }
   ],
-    "routes": [
-    { "src": "/api/v1/orion", "dest": "/api/v1/orion.js" },
-    { "src": "/api/v1/post", "dest": "/api/v1/post.js" },
-    { "src": "/api/(.*)", "dest": "/api/$1" },
+  "routes": [
     { "src": "/(.*)", "dest": "/" }
   ]
 }
