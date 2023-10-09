@@ -42,7 +42,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('http://localhost:8080/api/v1/orion', {
+        const response = await fetch('https://vercel.com/karth1kkk/orion-ai/3SnrjsrtQG36m33AsZLw9zoXYFxi/api/v1/orion', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:8080/api/v1/post', {
+        const response = await fetch('https://vercel.com/karth1kkk/orion-ai/3SnrjsrtQG36m33AsZLw9zoXYFxi/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
