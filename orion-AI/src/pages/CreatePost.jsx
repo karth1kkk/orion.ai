@@ -46,6 +46,7 @@ const CreatePost = () => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'https://orion-ai-dev.vercel.app', 
           },
           body: JSON.stringify({
             prompt: form.prompt,
