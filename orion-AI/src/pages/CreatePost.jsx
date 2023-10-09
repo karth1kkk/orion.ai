@@ -15,19 +15,6 @@ const CreatePost = () => {
     photo: '',
   });
 
-  useEffect(() => {
-    // Retrieve the reload count from local storage
-    const reloadCount = parseInt(localStorage.getItem('reloadCount')) || 0;
-  
-    if (reloadCount === 1) {
-      // Navigate to the '/' page on the second reload
-      navigate('/');
-    } else {
-      // Increment the reload count and store it in local storage
-      localStorage.setItem('reloadCount', reloadCount + 1);
-    }
-  }, [navigate]);  
-
   const [generatingImg, setGeneratingImg] = useState(false);
   const [loading, setLoading] = useState(false);
 
