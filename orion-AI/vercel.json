@@ -2,6 +2,15 @@
   "version": 2,
   "headers": [
     {
+      "source": "/create-post",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://orion-ai-dev.vercel.app"
+        }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
         {
